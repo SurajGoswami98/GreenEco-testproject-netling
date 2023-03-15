@@ -344,14 +344,14 @@ section p {
   margin-bottom: 10px;
 }
 
-.services {
+.services-list {
   background: url('./images/list\ bullet.png') center left;
   background-repeat: no-repeat;
   line-height: 30px;
   padding-left: 22px;
 }
 
-.services a {
+.services-list a {
   color: #666;
   text-decoration: underline;
 }
