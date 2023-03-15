@@ -324,6 +324,10 @@ section p {
   margin: 0 -10px;
   padding: 30px 20px 18px 18px;
 }
+#main-footer a:hover{
+  color:#004a25;
+  text-decoration: underline;
+}
 #footer-logo {
   float: right;
 }
