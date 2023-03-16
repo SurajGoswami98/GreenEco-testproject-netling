@@ -24,19 +24,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Arial th';
-  src: url('./fonts/arialTh.eot');
-  src: url('./fonts/arialTh.eot?#iefix') format('embedded-opentype'),
-    url('.fonts/arialTh.woff2') format('woff2'),
-    url('./fonts/arialTh.woff') format('woff'),
-    url('./fonts/ArialTh.ttf') format('truetype'),
-    url('./fonts/ArialTh.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
