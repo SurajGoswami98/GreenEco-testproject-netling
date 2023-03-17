@@ -38,13 +38,15 @@ body {
   margin: auto;
   max-width: 1200px;
 }
-h2, h3 {
+h2,h3{
+  font-family: 'century gothic',sans-serif;
+}
+h2{
   border-width: 5px;
   border-bottom: 1px dashed #b2b2b2;
   color: #005128;
   font-size: 18px;
   font-weight: normal;
-  font-family: 'century gothic';
   margin-bottom: 14px;
   padding-bottom: 12px;
 }
@@ -56,6 +58,9 @@ a:visited {
 }
 p {
   color: #666;
+}
+address{
+  font-style: normal;
 }
 ul {
   list-style-type: none;
@@ -71,8 +76,8 @@ button {
   font-size: 12px;
   font-weight: bold;
   font-family: "century gothic";
-  padding: 5px 0;
-  width: 100px;
+  padding: 5px 15px;
+  
 }
 button:hover {
   background: linear-gradient(to top, #1d3a07, #43771c);
@@ -95,62 +100,59 @@ button:hover {
   margin-bottom: 3px;
   padding: 22px 31px 11px 35px;
 }
-
-.header-contact-info {
+#header .contact-info {
   float: right;
-  color: #268155;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
   padding-top: 18px;
   text-align: right;
 }
-#tel-box {
-  margin-bottom: 9px;
-}
-#header a {
+.contact-info a {
+  display: block;
   color: #268155;
   font-size: 18px;
   font-weight: bold;
+  margin-bottom: 9px;
 }
-#telephone-icon {
+.tel-img-wrap .telephone-icon {
   display: inline-block;
   margin-right: 8px;
 }
-.telephone-number {
-  display: inline-block;
+.tel-img-wrap .telephone-number {
   font-size: 24px;
   vertical-align: super;
-}
-header .email {
-  display: inline-block;
 }
 /* header-ends */
 
 /* nav-starts */
-#main-navbar {
-  background: repeating-linear-gradient(180deg, #386f10, #518e24 20px);
+#navbar {
   margin-bottom: 3px;
-  overflow: hidden;
 }
-.navbar-items {
+#navbar ul{
+
+}
+#navbar ul li {
+  background: repeating-linear-gradient(180deg, #386f10, #518e24 20px);
+  width: 16.6666666%;
+  text-align: center;
   border-right: solid 1px transparent;
   border-image: url('./images/nav-bar-list-border.png') 10% stretch;
   float: left;
 }
-.navbar-items:first-child {
+#navbar ul li:first-child {
   background: repeating-linear-gradient(180deg, #395425, #45632f 20px);
   padding-left: 12px;
 }
-.navbar-items:last-child {
-  padding-right: 13px;
+#navbar li:last-child {
+  padding-right: 12px;
 }
-.navbar-items a {
+#navbar li a {
   color: #fff;
   display: block;
   font-size: 14px;
   font-weight: bold;
-  padding: 11px 37.5px;
+  padding: 10px 0px;
 }
-.navbar-items:hover {
+#navbar li:hover {
   background: repeating-linear-gradient(180deg, #395425, #45632f 20px);
 }
 /* nav-ends */
@@ -158,7 +160,8 @@ header .email {
 /* banner-image */
 #banner {
   border-bottom: 2px solid #5d9732;
-  line-height: 1;
+  line-height: 0;
+  padding-bottom: 2px;
   margin-bottom: 23px;
 }
 /* banner-image */
@@ -176,20 +179,22 @@ aside {
   font-weight: bold;
   font-size: 12px;
   margin-bottom: 24px;
-  overflow: hidden;
   padding: 0 18px;
+  padding-bottom: 18px
 }
-aside h3 {
+.box h3 {
   border: none;
   background: linear-gradient(to top, #231f20, #393939);
   color: white;
   font-size: 15px;
   font-weight: bold;
   line-height: 12px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   margin: 0 -18px 16px -18px;
   padding: 11px 99px 11px 14px;
 }
-aside p {
+.box p {
   color: white;
   margin-bottom: 10px;
 }
@@ -201,28 +206,30 @@ aside p {
   border-radius: 0px;
   border: 1px solid #01542a;
   margin-bottom: 12px;
-  width: 183px;
+  max-width: 100%;
 }
 .box input[placeholder] {
-  padding: 3.5px 7px;
+  padding: 3.5px 5px;
 }
 .box button {
-  float: right;
-  margin-bottom: 18px;
+  display: block;
+  margin-left: auto;
 }
 /* form-ends */
 /* contact-us-starts */
-.contact-details {
-  margin-bottom: 33px;
+.contact-details{
+  margin-bottom: 20px;
 }
-.contact-details img {
+.contact-details .img-container {
   border-bottom: 1px solid transparent;
   border-image: url('./images/aside-logo-border.png') 1% stretch;
-  display: block;
-  margin: auto;
   margin-bottom: 22px;
   padding-bottom: 8px;
-  width: 81%;
+}
+.img-container img{
+  display: block;
+  width: 80%;
+  margin: auto;
 }
 .contact-details address {
   color: #fff;
@@ -239,7 +246,8 @@ aside p {
 
 /* Main-section-starts */
 main {
-  max-width: 642px;
+  
+  min-width: 642px;
   margin-left: 283px;
   margin-bottom: 14px;
   overflow: hidden;
