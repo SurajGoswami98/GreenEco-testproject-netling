@@ -29,26 +29,19 @@
   margin: 0;
   padding: 0;
 }
-/* || generl-styling */
+/* || general-styling */
 body {
   background-color: #393939;
   font-family: arial, Helvetica, sans-serif;
   font-size: 12px;
-  line-height: 18px;
   margin: auto;
   max-width: 1200px;
 }
+span,p,li{
+  line-height: 18px;
+}
 h2,h3{
   font-family: 'century gothic',sans-serif;
-}
-h2{
-  border-width: 5px;
-  border-bottom: 1px dashed #b2b2b2;
-  color: #005128;
-  font-size: 18px;
-  font-weight: normal;
-  margin-bottom: 14px;
-  padding-bottom: 12px;
 }
 a {
   text-decoration: none;
@@ -65,9 +58,6 @@ address{
 ul {
   list-style-type: none;
 }
-li:last-child{
-  border-right: 0px;
-}
 button {
   border-radius: 5px;
   border: 1px solid white;
@@ -76,15 +66,11 @@ button {
   font-size: 12px;
   font-weight: bold;
   font-family: "century gothic";
-  padding: 5px 15px;
-  
+  padding: 5px 30px;
 }
 button:hover {
   background: linear-gradient(to top, #1d3a07, #43771c);
   cursor: pointer;
-}
-.gallery-link:hover {
-  opacity: .9;
 }
 .main-container {
   border-right: solid 10px #231f20;
@@ -98,9 +84,9 @@ button:hover {
 #header {
   background: linear-gradient(to top, #e6e7d7, #fff);
   margin-bottom: 3px;
-  padding: 22px 31px 11px 35px;
+  padding: 22px 31px 21px 35px;
 }
-#header .contact-info {
+.contact-info {
   float: right;
   margin-bottom: 18px;
   padding-top: 18px;
@@ -124,33 +110,31 @@ button:hover {
 /* header-ends */
 
 /* nav-starts */
-#navbar {
+#navbar{
+  display: inline-block;
+  width: 100%;
   margin-bottom: 3px;
-}
-#navbar ul{
-
 }
 #navbar ul li {
   background: repeating-linear-gradient(180deg, #386f10, #518e24 20px);
-  width: 16.6666666%;
-  text-align: center;
   border-right: solid 1px transparent;
   border-image: url('./images/nav-bar-list-border.png') 10% stretch;
   float: left;
 }
 #navbar ul li:first-child {
   background: repeating-linear-gradient(180deg, #395425, #45632f 20px);
-  padding-left: 12px;
+  padding-left: 12.5px;
 }
 #navbar li:last-child {
-  padding-right: 12px;
+  padding-right: 12.5px;
+  border-right: 0px;
 }
 #navbar li a {
   color: #fff;
   display: block;
   font-size: 14px;
   font-weight: bold;
-  padding: 10px 0px;
+  padding: 11px 37.55px;
 }
 #navbar li:hover {
   background: repeating-linear-gradient(180deg, #395425, #45632f 20px);
@@ -160,9 +144,7 @@ button:hover {
 /* banner-image */
 #banner {
   border-bottom: 2px solid #5d9732;
-  line-height: 0;
-  padding-bottom: 2px;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 /* banner-image */
 
@@ -170,8 +152,7 @@ button:hover {
 aside {
   float: left;
   font-size: 18px;
-  max-width: 259px;
-  margin-right: 28px;
+  max-width: 265px;
 }
 .box {
   background: linear-gradient(to top, #4b7c24, #588c2e);
@@ -180,14 +161,12 @@ aside {
   font-size: 12px;
   margin-bottom: 24px;
   padding: 0 18px;
-  padding-bottom: 18px
+  padding-bottom: 18px;
 }
 .box h3 {
-  border: none;
   background: linear-gradient(to top, #231f20, #393939);
   color: white;
   font-size: 15px;
-  font-weight: bold;
   line-height: 12px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -220,13 +199,13 @@ aside {
 .contact-details{
   margin-bottom: 20px;
 }
-.contact-details .img-container {
+.contact-details .box-logo-container {
   border-bottom: 1px solid transparent;
   border-image: url('./images/aside-logo-border.png') 1% stretch;
   margin-bottom: 22px;
   padding-bottom: 8px;
 }
-.img-container img{
+.box-logo-container img{
   display: block;
   width: 80%;
   margin: auto;
@@ -246,30 +225,34 @@ aside {
 
 /* Main-section-starts */
 main {
-  
   min-width: 642px;
-  margin-left: 283px;
-  margin-bottom: 14px;
-  overflow: hidden;
+  margin-left: 290px;
 }
 /* section-starts */
 section {
-  margin-bottom: 20px;
-  overflow: hidden;
-  padding-right: 5px;
+  margin-bottom: 38px;
+  padding-right: 35px;
 }
 section p {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+section h2{
+  border-bottom: 1px dashed #b2b2b2;
+  color: #005128;
+  font-weight: normal;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
 }
 /* section1-starts */
-#section1 img {
-  border: 2px solid #f0f0f0;
+.section1 img{
   float: right;
-  margin: 0 5px 0px 19px;
+  margin: 0 5px 0px 25px;
+
+  border: 2px solid #f0f0f0;
 }
 /* section1-ends */
 /* section2-starts */
-#section2 h2 {
+.section2_services h2 {
   border: none;
   margin-bottom: 0;
 }
@@ -279,66 +262,76 @@ section p {
   margin-bottom: 12px;
   padding: 25px 38px 13px 33px;
 }
-#section2 img {
+.services-container::after{
+content: "";
+clear: both;
+display: block;
+}
+.section2_services img {
+  float:left;
   border: 2px solid white;
   box-shadow: 0px 0px 10px #d8d9ca;
-  float: left;
   margin-right: 22px;
 }
 .services-container ul {
+  float:left;
   column-count: 2;
   column-gap: 27px;
   margin-bottom: 10px;
 }
-.services-list {
+.services-container ul li{
   background: url('./images/list\ bullet.png') center left;
   background-repeat: no-repeat;
   line-height: 30px;
   padding-left: 22px;
 }
-.services-list a {
+.services-container ul li a {
   color: #666;
   text-decoration: underline;
 }
-.services-list a:hover{
+.services-container ul li a:hover{
   color:#268155;
 }
 /* section2-ends */
+
 /* section-ends */
 /* main-section-ends */
 
 /* footer-starts */
-#main-footer {
+#footer {
   background-color: #b7b88c;
   box-shadow: 0 10px 5px -10px #808162 inset;
+  line-height: 24px;
   margin: 0 -10px;
-  padding: 30px 20px 18px 18px;
+  padding: 30px 20px 15px 18px;
 }
-#main-footer a:hover{
+#footer a:hover{
   color:#004a25;
   text-decoration: underline;
 }
 #footer-logo {
   float: right;
 }
-#main-footer ul {
-  margin-bottom: 8px;
+#footer ul {
+  padding-bottom: 5px;
 }
-.footer-links {
+#footer ul li {
   border-right: 1px solid black;
   display: inline-block;
 }
-.footer-links a {
+#footer ul li:last-child{
+  border-right: 0px;
+}
+#footer ul li a {
   color: #000;
   padding: 0 10px;
 }
-#main-footer p {
+#footer p {
   color: black;
   font-size: 11px;
   margin: 0px 8px;
 }
-#footer-copyrights-link {
+#footer p a {
   color: #004a25;
 }
-
 /* footer-ends */
