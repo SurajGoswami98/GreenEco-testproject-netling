@@ -33,11 +33,9 @@
 body {
   background-color: #393939;
   font-family: arial, Helvetica, sans-serif;
-  font-size: 12px;
   margin: auto;
   max-width: 1200px;
-}
-span,p,li{
+  font-size: 12px;
   line-height: 18px;
 }
 h2,h3{
@@ -84,7 +82,7 @@ button:hover {
 #header {
   background: linear-gradient(to top, #e6e7d7, #fff);
   margin-bottom:3px;
-  padding: 22px 31px 21px 35px;
+  padding: 22px 29px 20px 36px;
 }
 .contact-info {
   float: right;
@@ -112,7 +110,6 @@ button:hover {
 /* nav-starts */
 #navbar{
   display: inline-block;
-  width: 100%;
 }
 #navbar ul li {
   background: repeating-linear-gradient(180deg, #386f10, #518e24 20px);
@@ -141,9 +138,12 @@ button:hover {
 /* nav-ends */
 
 /* banner-image */
-#banner {
-  border-bottom: 1px solid #5d9732;
-  margin-bottom: 22px;
+#banner-container {
+  margin-bottom: 15px;
+}
+#banner-container img{
+  border-bottom: 2px solid #5d9732;
+  padding-bottom: 2px ;
 }
 /* banner-image */
 
@@ -151,7 +151,6 @@ button:hover {
 aside {
   float: left;
   font-size: 18px;
-  max-width: 265px;
 }
 .box {
   background: linear-gradient(to top, #4b7c24, #588c2e);
@@ -160,7 +159,7 @@ aside {
   font-size: 12px;
   margin-bottom: 24px;
   padding: 0 20px;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 }
 .box h3 {
   border-top-right-radius: 10px;
@@ -170,7 +169,7 @@ aside {
   font-size: 15px;
   line-height: 12px;
   margin: 0 -20px 16px -20px;
-  padding: 11px 99px 11px 14px;
+  padding: 11px 0px 11px 14px;
 }
 .box p {
   color: white;
@@ -184,7 +183,6 @@ aside {
   border-radius: 0px;
   border: 1px solid #01542a;
   margin-bottom: 12px;
-  max-width: 100%;
 }
 .box input[placeholder] {
   padding: 3.5px 5px;
@@ -196,15 +194,15 @@ aside {
 /* form-ends */
 /* contact-us-starts */
 .contact-details{
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
-.contact-details .box-logo-container {
+.contact-details .contact-logo-container {
   border-bottom: 1px solid transparent;
   border-image: url('./images/aside-logo-border.png') 1% stretch;
   margin-bottom: 22px;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
 }
-.box-logo-container img{
+.contact-logo-container img{
   display: block;
   width: 80%;
   margin: auto;
@@ -224,24 +222,24 @@ aside {
 
 /* Main-section-starts */
 main {
-  min-width: 642px;
   margin-left: 288px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 /* section-starts */
 section {
-  margin-bottom: 34px;
-  padding-right: 35px;
+  margin-bottom: 32px;
+  padding-right: 36px;
 }
 section p {
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 section h2{
   border-bottom: 1px dashed #b2b2b2;
   color: #005128;
+  font-size: 18px;
   font-weight: normal;
   margin-bottom: 14px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 /* section1-starts */
 .section1 img{
@@ -303,7 +301,7 @@ display: block;
   box-shadow: 0 10px 5px -10px #808162 inset;
   line-height: 24px;
   margin: 0 -10px;
-  padding: 24px 20px 22px 18px;
+  padding: 22px 22px 18px 18px;
 }
 #footer a:hover{
   color:#004a25;
@@ -316,6 +314,7 @@ display: block;
   padding-bottom: 5px;
 }
 #footer ul li {
+  padding: 0;
   border-right: 1px solid black;
   display: inline-block;
 }
