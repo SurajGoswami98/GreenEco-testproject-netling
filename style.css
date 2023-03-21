@@ -83,7 +83,7 @@ button:hover {
 /* || header-starts */
 #header {
   background: linear-gradient(to top, #e6e7d7, #fff);
-  margin-bottom: 3px;
+  margin-bottom:3px;
   padding: 22px 31px 21px 35px;
 }
 .contact-info {
@@ -93,8 +93,8 @@ button:hover {
   text-align: right;
 }
 .contact-info a {
-  display: block;
   color: #268155;
+  display: block;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 9px;
@@ -113,7 +113,6 @@ button:hover {
 #navbar{
   display: inline-block;
   width: 100%;
-  margin-bottom: 3px;
 }
 #navbar ul li {
   background: repeating-linear-gradient(180deg, #386f10, #518e24 20px);
@@ -143,8 +142,8 @@ button:hover {
 
 /* banner-image */
 #banner {
-  border-bottom: 2px solid #5d9732;
-  margin-bottom: 20px;
+  border-bottom: 1px solid #5d9732;
+  margin-bottom: 22px;
 }
 /* banner-image */
 
@@ -160,17 +159,17 @@ aside {
   font-weight: bold;
   font-size: 12px;
   margin-bottom: 24px;
-  padding: 0 18px;
+  padding: 0 20px;
   padding-bottom: 18px;
 }
 .box h3 {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   background: linear-gradient(to top, #231f20, #393939);
   color: white;
   font-size: 15px;
   line-height: 12px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  margin: 0 -18px 16px -18px;
+  margin: 0 -20px 16px -20px;
   padding: 11px 99px 11px 14px;
 }
 .box p {
@@ -226,21 +225,22 @@ aside {
 /* Main-section-starts */
 main {
   min-width: 642px;
-  margin-left: 290px;
+  margin-left: 288px;
+  padding-bottom: 15px;
 }
 /* section-starts */
 section {
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   padding-right: 35px;
 }
 section p {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 section h2{
   border-bottom: 1px dashed #b2b2b2;
   color: #005128;
   font-weight: normal;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   padding-bottom: 8px;
 }
 /* section1-starts */
@@ -303,7 +303,7 @@ display: block;
   box-shadow: 0 10px 5px -10px #808162 inset;
   line-height: 24px;
   margin: 0 -10px;
-  padding: 30px 20px 15px 18px;
+  padding: 24px 20px 22px 18px;
 }
 #footer a:hover{
   color:#004a25;
