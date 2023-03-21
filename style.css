@@ -133,7 +133,7 @@ button:hover {
   display: block;
   font-size: 14px;
   font-weight: bold;
-  padding: 11px 37.55px;
+  padding: 11px 37.5px;
 }
 #navbar li:hover {
   background: repeating-linear-gradient(180deg, #395425, #45632f 20px);
