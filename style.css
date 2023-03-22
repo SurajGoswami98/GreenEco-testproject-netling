@@ -157,7 +157,7 @@ aside {
   font-weight: bold;
   font-size: 12px;
   margin-bottom: 24px;
-  padding: 0 23px;
+  padding: 0 20px;
   padding-bottom: 19px;
 }
 .box h3 {
@@ -167,7 +167,7 @@ aside {
   color: white;
   font-size: 15px;
   line-height: 12px;
-  margin: 0 -23px 16px -23px;
+  margin: 0 -20px 16px -20px;
   padding: 11px 0px 11px 14px;
 }
 .box p {
@@ -175,18 +175,18 @@ aside {
   margin-bottom: 10px;
 }
 /* form-starts */
-.box label {
+form label {
   color: #fff;
 }
-.box input {
+form input {
   border-radius: 0px;
   border: 1px solid #01542a;
   margin-bottom: 12px;
 }
-.box input[placeholder] {
+form input[placeholder] {
   padding: 3.5px 5px;
 }
-.box button {
+form button {
   display: block;
   margin-left: auto;
 }
@@ -241,10 +241,9 @@ section h2{
   padding-bottom: 12px;
 }
 /* section1-starts */
-.section1 img{
+.section1_welcome img{
   float: right;
   margin: 0 5px 0px 25px;
-
   border: 2px solid #f0f0f0;
 }
 /* section1-ends */
@@ -261,10 +260,10 @@ section h2{
 }
 .services-container::after{
 content: "";
-clear: both;
+clear: left;
 display: block;
 }
-.section2_services img {
+.services-container img {
   float:left;
   border: 2px solid white;
   box-shadow: 0px 0px 10px #d8d9ca;
