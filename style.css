@@ -221,7 +221,7 @@ form button {
 
 /* Main-section-starts */
 main {
-  margin-left: 288px;
+  margin-left: 287px;
   padding-bottom: 17px;
 }
 /* section-starts */
@@ -256,7 +256,7 @@ section h2{
   background-color: #e6e7d7;
   border-radius: 5px;
   margin-bottom: 12px;
-  padding: 25px 38px 13px 33px;
+  padding: 25px 43px 13px 32px;
 }
 .services-container::after{
 content: "";
@@ -265,21 +265,21 @@ display: block;
 }
 .services-container img {
   float:left;
-  border: 2px solid white;
+  border: 1px solid white;
   box-shadow: 0px 0px 10px #d8d9ca;
-  margin-right: 22px;
+  margin-right: 24px;
 }
 .services-container ul {
   float:left;
   column-count: 2;
-  column-gap: 27px;
+  column-gap: 43px;
   margin-bottom: 10px;
 }
 .services-container ul li{
   background: url('./images/list\ bullet.png') center left;
   background-repeat: no-repeat;
   line-height: 30px;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 .services-container ul li a {
   color: #666;
