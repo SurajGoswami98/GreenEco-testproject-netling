@@ -87,11 +87,10 @@ button:hover {
 #header {
   background: linear-gradient(to top, #e6e7d7, #fff);
   margin-bottom: 3px;
-  padding: 22px 29px 20px 36px;
+  padding: 22px 30px 20px 36px;
 }
 .contact-info {
   float: right;
-  margin-bottom: 18px;
   padding-top: 18px;
   text-align: right;
 }
@@ -100,10 +99,12 @@ button:hover {
   display: block;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 9px;
+}
+.tel-img-wrap{
+  margin-bottom:12px;
 }
 .tel-img-wrap .telephone-icon {
-  margin-right: 8px;
+  margin-right: 7px;
 }
 .tel-img-wrap .telephone-number {
   font-size: 24px;
@@ -121,17 +122,17 @@ button:hover {
   border-image: url('./images/nav-bar-list-border.png') 10% stretch;
   float: left;
 }
-#navbar ul li:first-child {
+#navbar ul li:first-child a {
   background: repeating-linear-gradient(180deg, #395425, #45632f 20px);
-  padding-left: 12.69px;
+  padding-left: 50px;
 }
-#navbar li:last-child {
-  padding-right: 13.05px;
+#navbar li:last-child a {
+  padding-right: 49.74px;
   border-right: 0px;
 }
 #navbar li a {
   color: #fff;
-  display: block;
+  display: inline-block;
   font-size: 14px;
   font-weight: bold;
   padding: 11.01px 37.5px;
