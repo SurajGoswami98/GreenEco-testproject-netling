@@ -34,6 +34,8 @@ body {
   background-color: #393939;
   font-family: arial, Helvetica, sans-serif;
   font-size: 12px;
+}
+p,a,span,h2{
   line-height: 18px;
 }
 h2,h3 {
@@ -99,13 +101,13 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
 }
-.tel-img-wrap{
+.text-img-wrap{
   margin-bottom:12px;
 }
-.tel-img-wrap img {
+header .text-img-wrap img {
   margin-right: 7px;
 }
-.tel-img-wrap span {
+header .text-img-wrap span {
   font-size: 24px;
   vertical-align: super;
 }
@@ -143,11 +145,12 @@ button:hover {
 
 /* banner-image */
 #banner{
-  margin-bottom:16px;
-}
-#banner figure img {
-  border-bottom: 2px solid #5d9732;
+  margin-bottom:23px;
   padding-bottom: 2px;
+  border-bottom: 2px solid #5d9732;
+}
+#banner img{
+  display: block;
 }
 /* banner-image */
 
@@ -234,14 +237,14 @@ section p {
   margin-bottom: 17px;
 }
 /* section1-starts */
-.two-para-section img {
-  float: right;
+.flr{
+  float: right; 
   margin: 0 7px 0 32px;
   border: 2px solid #f0f0f0;
 }
 /* section1-ends */
 /* section2-starts */
-.section2 h2 {
+.no-border {
   border: none;
   margin-bottom: 0;
 }
