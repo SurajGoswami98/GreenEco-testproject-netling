@@ -33,8 +33,6 @@
 body {
   background-color: #393939;
   font-family: arial, Helvetica, sans-serif;
-  margin: auto;
-  max-width: 1200px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -76,7 +74,7 @@ button:hover {
   background: linear-gradient(to top, #1d3a07, #43771c);
   cursor: pointer;
 }
-.main-container {
+.container {
   border-right: solid 10px #231f20;
   border-left: solid 10px #231f20;
   background-color: #fff;
@@ -104,10 +102,10 @@ button:hover {
 .tel-img-wrap{
   margin-bottom:12px;
 }
-.tel-img-wrap .telephone-icon {
+.tel-img-wrap img {
   margin-right: 7px;
 }
-.tel-img-wrap .telephone-number {
+.tel-img-wrap span {
   font-size: 24px;
   vertical-align: super;
 }
@@ -144,9 +142,11 @@ button:hover {
 /* nav-ends */
 
 /* banner-image */
-#banner {
+#banner{
+  margin-bottom:16px;
+}
+#banner figure img {
   border-bottom: 2px solid #5d9732;
-  margin-bottom: 16px;
   padding-bottom: 2px;
 }
 /* banner-image */
@@ -156,7 +156,7 @@ aside {
   float: left;
   max-width: 261px;
 }
-.box {
+.box1 {
   background: linear-gradient(to top, #4b7c24, #588c2e);
   border-radius: 10px;
   font-weight: bold;
@@ -166,10 +166,10 @@ aside {
   padding-bottom: 19px;
   color: white;
 }
-.box p,a{
+.box1 p,a{
   color: white;
 }
-.box h3 {
+.box1 h3 {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   background: linear-gradient(to top, #231f20, #393939);
@@ -178,7 +178,7 @@ aside {
   margin: 0 -20px 16px -20px;
   padding: 11px 0px 11px 14px;
 }
-.box p{
+.box1 p{
   margin-bottom:10px;
 }
 /* form-starts */
@@ -200,13 +200,13 @@ form button {
 .contact-details {
   margin-bottom: 15px;
 }
-.contact-details .contact-logo-container {
+.contact-details figure {
   border-bottom: 1px solid transparent;
   border-image: url('./images/aside-logo-border.png') 1% stretch;
   margin-bottom: 19px;
   padding-bottom: 13px;
 }
-.contact-logo-container img {
+.contact-details figure img {
   display: block;
   margin: auto;
 }
@@ -219,7 +219,7 @@ form button {
 /* contact-us-ends */
 /* aside-ends */
 
-/* Main-section-starts */
+/* Main-starts */
 main {
   float:left;
   margin-left: 28px;
@@ -234,55 +234,55 @@ section p {
   margin-bottom: 17px;
 }
 /* section1-starts */
-.section1_welcome img {
+.two-para-section img {
   float: right;
   margin: 0 7px 0 32px;
   border: 2px solid #f0f0f0;
 }
 /* section1-ends */
 /* section2-starts */
-.section2_services h2 {
+.section2 h2 {
   border: none;
   margin-bottom: 0;
 }
-.services-container {
+.box2 {
   background-color: #e6e7d7;
   border-radius: 5px;
   margin-bottom: 12px;
   padding: 25px 43px 22px 31px;
 }
-.services-container::after {
+.box2::after {
   content: "";
   clear: both;
   display: block;
 }
-.services-container img {
+.box2 img {
   float: left;
   border: 1px solid white;
   box-shadow: 0px 0px 10px #d8d9ca;
   margin-right: 24px;
 }
-.services-container ul {
+.box2 ul {
   float: left;
   column-count: 2;
   column-gap: 43px;
 }
-.services-container ul li {
+.list1 li {
   background: url('./images/list\ bullet.png') center left;
   background-repeat: no-repeat;
   line-height: 30px;
   padding-left: 20px;
 }
-.services-container ul li a {
+.list1 li a {
   color: #666;
   text-decoration: underline;
 }
-.services-container ul li a:hover {
+.list1 li a:hover {
   color: #268155;
 }
 /* section2-ends */
 /* section-ends */
-/* main-section-ends */
+/* main-ends */
 
 /* footer-starts */
 #footer {
