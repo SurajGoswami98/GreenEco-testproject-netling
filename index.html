@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="container">
 
         <!-- header-section-start -->
         <header id="header">
@@ -20,8 +20,8 @@
             <!-- header-logo -->
             <address class="contact-info">
                 <a href="tel:2815551212" class="tel-img-wrap">
-                    <img src="./images/telephone-logo.png" alt="telephone-icon" class="telephone-icon">
-                    <span class="telephone-number">281.555.1212</span>
+                    <img src="./images/telephone-logo.png" alt="telephone-icon">
+                    <span>281.555.1212</span>
                 </a>
                 <a href="mailto:email-us@greeneco.com">email-us@greeneco.com</a>
             </address>
@@ -41,13 +41,17 @@
         </nav>
         <!-- navbar-end -->
 
-        <!-- banner-image-container -->
-        <img src="./images/banner.jpg" alt="big-house" id="banner">
-        <!-- banner-image-container -->
+        <!-- banner-image -->
+        <div id="banner">
+            <figure>
+                <img src="./images/banner.jpg" alt="big-house">
+            </figure>
+        </div>
+        <!-- banner-image -->
 
         <!-- side-section-start -->
         <aside>
-            <div class="box">
+            <div class="box1">
                 <h3>Newsletter</h3>
                 <form action="#">
                     <p>Signup for our newsletter</p>
@@ -57,12 +61,12 @@
                 </form>
             </div>
 
-            <div class="box">
+            <div class="box1">
                 <h3>Contact Us</h3>
                 <div class="contact-details">
-                    <div class="contact-logo-container">
+                    <figure>
                         <img src="./images/contact-details-logo.png" alt="GreenEco-logo">
-                    </div>
+                    </figure>
                     <address>
                         <strong>Green ECO Builders, LLC.</strong><br>
                         Phone:<a href="tel:8886664444">(888) 666-4444</a><br>
@@ -79,8 +83,9 @@
         <main>
             <!-- main-content-of-the-page -->
 
-            <section class="section1_welcome">
+            <section class="two-para-section">
                 <h2>Welcome to Green ECO Builders, LLC</h2>
+                
                 <img src="./images/house1-section1.jpg" alt="house with porch area">
 
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -104,21 +109,21 @@
 
             </section>
 
-            <section class="section2_services">
+            <section class="section2">
 
                 <h2>Featured Services</h2>
 
-                <div class="services-container">
+                <div class="box2">
                     <img src="./images/house2-section21.jpg" alt="front view of a house">
-                    <ul>
-                        <li><a href="#">Sed ut perspiciatis unde</a></li>
-                        <li><a href="#">Omnis iste natus error sit</a></li>
-                        <li><a href="#">Voluptatem accusantium</a></li>
-                        <li><a href="#">Doloremque laudantium</a></li>
-                        <li><a href="#">Sed ut perspiciatis unde</a></li>
-                        <li><a href="#">Omnis iste natus error sit</a></li>
-                        <li><a href="#">Voluptatem accusantium</a></li>
-                        <li><a href="#">Doloremque laudantium </a></li>
+                    <ul class="list1">                 
+                            <li><a href="#">Sed ut perspiciatis unde</a></li>
+                            <li><a href="#">Omnis iste natus error sit</a></li>
+                            <li><a href="#">Voluptatem accusantium</a></li>
+                            <li><a href="#">Doloremque laudantium</a></li>
+                            <li><a href="#">Sed ut perspiciatis unde</a></li>
+                            <li><a href="#">Omnis iste natus error sit</a></li>
+                            <li><a href="#">Voluptatem accusantium</a></li>
+                            <li><a href="#">Doloremque laudantium </a></li>
                     </ul>
                 </div>
 
@@ -142,7 +147,9 @@
 
         <!-- footer-start -->
         <footer id="footer">
-            <a href="#" id="footer-logo"> <img src="./images/logo-footer.png" alt="GreenEco-logo"></a>
+            <a href="#" id="footer-logo">
+                <img src="./images/logo-footer.png" alt="GreenEco-logo">
+            </a>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Communities</a></li>
